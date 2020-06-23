@@ -1,0 +1,26 @@
+/*--------------------------------------------------------------
+# Section
+--------------------------------------------------------------*/
+.section {
+    padding: $spacing-unit--large 0;
+    .section__header {
+        text-align: center;
+        margin-bottom: $spacing-unit + $spacing-unit--small;
+        h2 {
+            font-size: 30px;
+            &.big{}
+        }
+        p {
+            margin-top: $spacing-unit--small;
+            a {
+                color: $color-link;
+                @include attention() {
+                    color: $color-link--hover;
+                }
+            }
+        }
+    }
+    &--bg {
+        background-color: lighten($black, 95%);
+    }
+}
