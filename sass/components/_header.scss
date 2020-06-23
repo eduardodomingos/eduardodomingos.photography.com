@@ -2,6 +2,7 @@
 # Header
 --------------------------------------------------------------*/
 .site-header {
+    padding-top: $site-header-height + $cta-thin-height;
     > div {
         position: fixed;
         top: 0;
@@ -40,6 +41,7 @@
         height: 75vh;
         background-size: cover;
         background-position: center;
+        padding-top: 0;
     }
 
     .offcanvas-toggle {

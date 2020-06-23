@@ -8,10 +8,16 @@
         margin-bottom: $spacing-unit + $spacing-unit--small;
         h2 {
             font-size: 30px;
-            &.big{}
+            &.big{
+                font-size: 38px;
+            }
+            @include mq($from: desktop) {
+                font-size: 35px;
+            }
         }
         p {
-            margin-top: $spacing-unit--small;
+            max-width: 600px;
+            margin: $spacing-unit--small auto 0;
             a {
                 color: $color-link;
                 @include attention() {

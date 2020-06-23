@@ -26,6 +26,7 @@
 
     &--portfolio {
         position: relative;
+        background-color: lighten($black, 10%);
         &:not(:last-child) {
             margin: 0 0 $spacing-unit--large;
             @include mq($from: tablet) {
@@ -64,8 +65,10 @@
                 opacity: 1;
             }
             img {
-                opacity: .8;
+                opacity: .5;
             }
         }
     }
+
+    &--location {}
 }
