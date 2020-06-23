@@ -1,18 +1,22 @@
 /*--------------------------------------------------------------
 # Section
 --------------------------------------------------------------*/
+%section {
+    padding: $spacing-unit + $spacing-unit--large 0;
+    &:first-child {
+        padding-top: $spacing-unit--large;
+    }
+}
+
 .section {
-    padding: $spacing-unit--large 0;
+    @extend %section;
     .section__header {
         text-align: center;
-        margin-bottom: $spacing-unit + $spacing-unit--small;
+        margin-bottom: $spacing-unit--large;
         h2 {
-            font-size: 30px;
+            font-size: 35px;
             &.big{
-                font-size: 38px;
-            }
-            @include mq($from: desktop) {
-                font-size: 35px;
+                font-size: 40px;
             }
         }
         p {

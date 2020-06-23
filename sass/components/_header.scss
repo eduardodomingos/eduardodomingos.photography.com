@@ -17,7 +17,7 @@
     }
     .bar {
         height: $site-header-height;
-        background-color: $white;
+        background-color: rgba($white, .95);
         >.wrap {
             height: 100%;
             display: flex;

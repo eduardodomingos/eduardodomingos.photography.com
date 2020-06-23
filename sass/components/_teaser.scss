@@ -55,8 +55,7 @@
             opacity: 0;
             color: $white;
             transition: all .2s;
-            font-weight: $font--light;
-            font-size: 17px;
+            font-size: 18px;
             letter-spacing: .2px;
         }
 
@@ -65,10 +64,34 @@
                 opacity: 1;
             }
             img {
-                opacity: .5;
+                opacity: .6;
             }
         }
     }
 
-    &--location {}
+    &--location {
+        position: relative;
+        background-color: lighten($black, 10%);
+        img {
+            margin-bottom: 0;
+            transition: all .2s;
+            opacity: .6;
+        }
+        h2 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            text-align: center;
+            width: 100%;
+            color: $white;
+            transition: all .2s;
+            letter-spacing: .2px;
+        }
+        @include attention() {
+            img {
+                opacity: .8;
+            }
+        }
+    }
 }

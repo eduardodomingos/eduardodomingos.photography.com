@@ -3,6 +3,7 @@
 --------------------------------------------------------------*/
 .socials {
     display: flex;
+    color: $white;
     > li:not(:last-child) {
         margin-right: $spacing-unit--small;
     }
@@ -30,7 +31,7 @@
         }
 
         @include attention() {
-            opacity: .8;
+            opacity: .85;
         }
     }
 

@@ -28,3 +28,11 @@ body {
         }
     }
 }
+
+%links {
+    color: $color-link;
+    @include attention() {
+        color: $color-link--hover;
+        text-decoration: underline;
+    }
+}
